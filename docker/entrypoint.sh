@@ -1,8 +1,10 @@
 #!/bin/sh
 
 server() {
+  echo ${APP}
+  sed -i "s|\[app\]|${APP}|g" /etc/xdg/openbox/menu.xml
   # bootstrap 
-  chown app:app /data /dev/stdout && exec gosu app supervisord
+  chown app:app /app /dev/stdout && exec gosu app supervisord
 }
 
 if [ "$1" = 'server' ]; then

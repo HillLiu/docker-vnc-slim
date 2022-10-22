@@ -22,6 +22,6 @@ COPY ./docker/supervisord.conf /etc/
 COPY ./docker/entrypoint.sh /usr/local/bin/
 
 EXPOSE 8080
-VOLUME /data
+VOLUME /app
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["server"]
