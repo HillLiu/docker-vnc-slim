@@ -1,4 +1,4 @@
 repositoryName=docker-vnc-slim
 repositoryOrgName=HillLiu
 dockerImageName=vnc-slim
-dockerOrgName=hillliu
+dockerOrgName=allfunc
