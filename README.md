@@ -19,3 +19,6 @@
 ```
 
 ```
+
+## Openbox alternaitve
+* fluxbox
